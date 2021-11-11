@@ -1,8 +1,8 @@
 module.exports = {
     title: '前端技术架构',             // 设置网站标题
-    description: '',                  // 网站描述
-    base: './',                        // 设置站点根路径   上传github 使用
-    dest: './root',                   // 设置输出目录
+    description: 'Hello 前端小伙伴',                  // 网站描述
+    base: '/wss/',                    // 默认根目录 / 需要根据github上创建的项目name
+    dest: 'dist',                     // 设置输出目录
     head: [
         [
             'link', 
@@ -17,7 +17,7 @@ module.exports = {
         logo: '/images/vue.webp',
         nav: [
                 { text: '首页',      link: '/' },
-                { text: '开发指南',  link: '/development/xmjs/xm' },
+                { text: '开发指南',  link: '/development/' },
                 // { text: '项目配置',   link: '/devNew/webpack/webpack'
                 //     // items: [
                 //     //     { text: 'javascript相关', link: '/javascript/js/' },
@@ -37,11 +37,11 @@ module.exports = {
                             path: 'xmjs/xm'
                         },
                         {
-                            title: "开发规范",
+                            title: "项目规范",
                             path: 'kfgf/gf'
                         },
                         {
-                            title: "代码提交规范",
+                            title: "提交规范",
                             path: 'dmtj/tj'
                         }
                     ]
