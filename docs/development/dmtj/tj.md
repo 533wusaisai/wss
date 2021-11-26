@@ -16,7 +16,7 @@
    * @description { . } 为修改的文件全部提交
    * @description { test.vue } 为只提交test.vue 文件
    */
-  git commit -m 'feat / fix: 例：本次提交信息'
+  git commit -m 'feat：提交描述'
   /*
    * commit 简要说明本次提交的信息
    * { feat } 新功能
@@ -41,4 +41,17 @@
 
 ```
 ### Git 解决冲突
-### Git 提交信息模板
+``` js
+//  先拉取代码 在提交
+git pull
+git add .
+git commit -m 'type: 提交信息'
+git push
+
+// 合并是冲突
+git status   // 查看文件修改状态
+// 先解决冲突再提交
+git add .
+git commit -m 'type: 提交信息'
+git push
+```

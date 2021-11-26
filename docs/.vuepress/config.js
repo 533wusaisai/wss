@@ -43,6 +43,10 @@ module.exports = {
                         {
                             title: "提交规范",
                             path: 'dmtj/tj'
+                        },
+                        {
+                            title: "Git版本规范化",
+                            path: 'git/v1'
                         }
                     ]
                 }
