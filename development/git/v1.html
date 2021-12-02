@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>代码提交规范 | 前端技术架构</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/wss/images/vue.webp">
+    <script src="/wss/javascripts.js"></script>
+    <meta name="description" content="Hello 前端小伙伴">
+    
+    <link rel="preload" href="/wss/assets/css/0.styles.d3eb9add.css" as="style"><link rel="preload" href="/wss/assets/js/app.7f0020ef.js" as="script"><link rel="preload" href="/wss/assets/js/2.fa873243.js" as="script"><link rel="preload" href="/wss/assets/js/11.db44402b.js" as="script"><link rel="prefetch" href="/wss/assets/js/10.41534f96.js"><link rel="prefetch" href="/wss/assets/js/12.193b2e00.js"><link rel="prefetch" href="/wss/assets/js/13.9a208163.js"><link rel="prefetch" href="/wss/assets/js/14.daff4cd1.js"><link rel="prefetch" href="/wss/assets/js/15.c744ba8f.js"><link rel="prefetch" href="/wss/assets/js/3.25e1a0a6.js"><link rel="prefetch" href="/wss/assets/js/4.2f744ccc.js"><link rel="prefetch" href="/wss/assets/js/5.f0bf878f.js"><link rel="prefetch" href="/wss/assets/js/6.2cd6864b.js"><link rel="prefetch" href="/wss/assets/js/7.fe687dbe.js"><link rel="prefetch" href="/wss/assets/js/8.840b5db7.js"><link rel="prefetch" href="/wss/assets/js/9.5b4c3823.js">
+    <link rel="stylesheet" href="/wss/assets/css/0.styles.d3eb9add.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wss/" class="home-link router-link-active"><img src="/wss/images/vue.webp" alt="前端技术架构" class="logo"> <span class="site-name can-hide">前端技术架构</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wss/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wss/development/" class="nav-link router-link-active">
+  开发指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wss/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wss/development/" class="nav-link router-link-active">
+  开发指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wss/development/xmjs/xm.html" class="sidebar-link">项目介绍</a></li><li><a href="/wss/development/kfgf/gf.html" class="sidebar-link">项目规范</a></li><li><a href="/wss/development/dmtj/tj.html" class="sidebar-link">提交规范</a></li><li><a href="/wss/development/git/v1.html" aria-current="page" class="active sidebar-link">Git版本规范化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wss/development/git/v1.html#代码提交规范" class="sidebar-link">代码提交规范</a></li><li class="sidebar-sub-header"><a href="/wss/development/git/v1.html#v1-0-0-版本提交规范" class="sidebar-link">V1.0.0 版本提交规范</a></li><li class="sidebar-sub-header"><a href="/wss/development/git/v1.html#v2-0-0-版本提交规范" class="sidebar-link">V2.0.0 版本提交规范</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="代码提交规范"><a href="#代码提交规范" class="header-anchor">#</a> 代码提交规范</h2> <blockquote><p>提交结构如下：</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;type&gt;[scoped]: &lt;description&gt;
+
+type:  为了说明本次提交做了那些功能意图
+description: 添加本次提交说明
+
+type分为  可选有以下：
+- feat: 表示新增了一个功能
+- fix: 表示修复了一个 bug
+- docs: 表示只修改了文档
+- style: 表示修改格式、书写错误、空格等不影响代码逻辑的操作
+- refactor: 表示修改的代码不是新增功能也不是修改 bug，比如代码重构
+- perf: 表示修改了提升性能的代码
+- test: 表示修改了测试代码
+- build: 表示修改了编译配置文件
+- chore: 无 src 或 test 的操作
+- revert: 回滚操作
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="v1-0-0-版本提交规范"><a href="#v1-0-0-版本提交规范" class="header-anchor">#</a> V1.0.0 版本提交规范</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 两种形式安装 </span>
+npm install <span class="token operator">-</span>g commitizen
+npm install <span class="token operator">--</span>save<span class="token operator">-</span>dev git<span class="token operator">-</span>cz
+commitizen init cz<span class="token operator">-</span>conventional<span class="token operator">-</span>changelog <span class="token operator">--</span>save<span class="token operator">-</span>dev <span class="token operator">--</span>save<span class="token operator">-</span>exact
+#or
+yarn add commitizen <span class="token operator">-</span>g
+yarn add git<span class="token operator">-</span>cz <span class="token operator">--</span>save<span class="token operator">-</span>dev
+commitizen init cz<span class="token operator">-</span>conventional<span class="token operator">-</span>changelog <span class="token operator">--</span>save<span class="token operator">-</span>dev <span class="token operator">--</span>save<span class="token operator">-</span>exact
+
+# 修改<span class="token keyword">package</span><span class="token punctuation">.</span>json
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;commitizen&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./node_modules/cz-conventional-changelog&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+   <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    	<span class="token string">&quot;commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git-cz&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+# 自定义配置 changelog<span class="token punctuation">.</span>config<span class="token punctuation">.</span>js  用于提交监测 type类型
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;disableEmoji&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>   <span class="token comment">// 表情</span>
+  <span class="token string">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>   <span class="token comment">// 测试</span>
+    <span class="token string">&quot;feat&quot;</span><span class="token punctuation">,</span>   <span class="token comment">// 新特性 or 新功能</span>
+    <span class="token string">&quot;fix&quot;</span><span class="token punctuation">,</span>     <span class="token comment">// 修复问题bug</span>
+    <span class="token string">&quot;chore&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 项目依赖升级或修改</span>
+    <span class="token string">&quot;docs&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 项目文档修改</span>
+    <span class="token string">&quot;refactor&quot;</span><span class="token punctuation">,</span> <span class="token comment">// </span>
+    <span class="token string">&quot;style&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// style 样式修改</span>
+    <span class="token string">&quot;ci&quot;</span><span class="token punctuation">,</span>      <span class="token comment">// CI/CO配置</span>
+    <span class="token string">&quot;perf&quot;</span>   <span class="token comment">// 性能优化</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;maxMessageLength&quot;</span><span class="token operator">:</span> <span class="token number">64</span><span class="token punctuation">,</span>     <span class="token comment">// 最大长度</span>
+  <span class="token string">&quot;minMessageLength&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>      <span class="token comment">// 最短长度</span>
+  <span class="token string">&quot;questions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;type&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;scope&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;subject&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;body&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;breaking&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;issues&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lerna&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scopes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;chore&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;构建依赖/工具等功能改动&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🤖&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;chore&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ci&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CI related changes&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🎡&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ci&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docs&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;文档更新&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;✏️&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;docs&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;feat&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;新特性/新功能&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🎸&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;feat&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;fix&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;问题修复bug&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🐛&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fix&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;perf&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;性能优化&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;⚡️&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;perf&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;refactor&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;结构优化&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;💡&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;refactor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;release&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Create a release commit&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🏹&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;release&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;样式优化&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;💄&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;style&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;test&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;新增测试内容&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;emoji&quot;</span><span class="token operator">:</span> <span class="token string">&quot;💍&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 试试提交</span>
+git add <span class="token punctuation">.</span> <span class="token operator">/</span><span class="token punctuation">(</span>文件<span class="token punctuation">)</span>
+npm run commit
+
+<span class="token operator">**</span><span class="token operator">**</span><span class="token operator">*</span> 重点 <span class="token operator">**</span><span class="token operator">**</span><span class="token operator">*</span>
+
+<span class="token comment">// 生成 CHANGELOG 文件 查看版本  自动生成 tag 版本  进行管理</span>
+npm install <span class="token operator">-</span><span class="token constant">S</span> standard<span class="token operator">-</span>version
+#or
+yarn add  standard<span class="token operator">-</span>version <span class="token operator">-</span><span class="token constant">S</span>
+
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;scirpt&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;release&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard-version&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 查看当前配置是否生效</span>
+npm run release
+#or
+yarn release
+
+# <span class="token keyword">package</span><span class="token punctuation">.</span>json中必须添加
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;github.com:533wusaisai/test-commit.git&quot;</span> <span class="token comment">// git 仓库地址</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 以上有缺陷 每次提交 需要 npm run commit 或 yarn commit</span>
+
+<span class="token comment">// 优化  使用正常的git commit 命令</span>
+npm install @commitlint<span class="token operator">/</span>cli <span class="token operator">-</span><span class="token constant">D</span>
+npm install @commitlint<span class="token operator">/</span>config<span class="token operator">-</span>conventional <span class="token operator">-</span><span class="token constant">D</span>
+npm install chalk
+npm install lint<span class="token operator">-</span>staged
+npm install yorkie
+#or
+yarn add <span class="token operator">-</span><span class="token constant">D</span> @commitlint<span class="token operator">/</span>cli
+yarn add @commitlint<span class="token operator">/</span>config<span class="token operator">-</span>conventional <span class="token operator">-</span><span class="token constant">D</span>
+yarn add chalk
+yarn add lint<span class="token operator">-</span>staged
+yarn add yorkie
+
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;gitHooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// verify-commit-msg.js 可在文件下创建  此文件是仿照vue官网的文件进行创建</span>
+        <span class="token string">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node verify-commit-msg.js&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;*.js&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;eslint --fix&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;git add&quot;</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// verify-commit-msg.js 文件</span>
+<span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;chalk&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> msgPath <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">GIT_PARAMS</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> msg <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span>msgPath<span class="token punctuation">,</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> commitRE <span class="token operator">=</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^(revert: )?(feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types|build)(\(.+\))?: .{1,50}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>commitRE<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>
+    <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chalk<span class="token punctuation">.</span>bgRed<span class="token punctuation">.</span><span class="token function">white</span><span class="token punctuation">(</span><span class="token string">&quot; ERROR &quot;</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">invalid commit message format.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\n\n</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span>
+      chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span>
+        <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">  Proper commit message format is required for automated changelog generation. Examples:\n\n</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">)</span> <span class="token operator">+</span>
+      <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chalk<span class="token punctuation">.</span><span class="token function">green</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">feat(compiler): add 'comments' option</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\n</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span>
+      <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chalk<span class="token punctuation">.</span><span class="token function">green</span><span class="token punctuation">(</span>
+        <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">fix(v-model): handle events on blur (close #28)</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\n\n</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span>
+      chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">  See .github/COMMIT_CONVENTION.md for more details.\n</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span> <span class="token operator">+</span>
+      chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span>
+        <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">  You can also use </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chalk<span class="token punctuation">.</span><span class="token function">cyan</span><span class="token punctuation">(</span>
+          <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">npm run commit</span><span class="token template-punctuation string">`</span></span>
+        <span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> to interactively generate a commit message.\n</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  process<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 之后可以按照git commit提交 每次都会进行校验</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br></div></div><h2 id="v2-0-0-版本提交规范"><a href="#v2-0-0-版本提交规范" class="header-anchor">#</a> V2.0.0 版本提交规范</h2> <blockquote><p>此版本与上面有所不同</p></blockquote> <div class="language-JS line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 添加 commit 校验规则 </span>
+npm install commitizen
+npm install @commitlint<span class="token operator">/</span>cli <span class="token operator">-</span><span class="token constant">D</span>
+npm install @commitlint<span class="token operator">/</span>config<span class="token operator">-</span>conventional <span class="token operator">-</span><span class="token constant">D</span>
+npm install husky
+#or
+yarn add commitizen
+yarn add <span class="token operator">-</span><span class="token constant">D</span> @commitlint<span class="token operator">/</span>cli
+yarn add @commitlint<span class="token operator">/</span>config<span class="token operator">-</span>conventional <span class="token operator">-</span><span class="token constant">D</span>
+yarn add husky
+
+# 修改<span class="token keyword">package</span><span class="token punctuation">.</span>json
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;commitizen&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./node_modules/cz-conventional-changelog&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+   <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token string">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky install&quot;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 生成 .husky 配置文件</span>
+yarn prepare
+#or
+npm install prepare
+
+<span class="token comment">// 生成 pre-commit commit-msg pre-push文件</span>
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>pre<span class="token operator">-</span>commit <span class="token string">&quot;npm run lint&quot;</span>
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>commit<span class="token operator">-</span>msg <span class="token string">'npx --no-install commitlint --edit &quot;$1&quot;'</span>
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>pre<span class="token operator">-</span>push <span class="token string">'npm run release'</span>
+
+<span class="token comment">// 检测</span>
+yarn add lint<span class="token operator">-</span>staged
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 文件检测配置   eslint 等</span>
+        <span class="token string">&quot;*.less&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          	<span class="token string">&quot;stylelint --fix&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;*.{js,vue,ts,tsx}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          	<span class="token string">&quot;eslint --fix&quot;</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 添加配置文件.commitlintrc.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// commit lint校验规则继承</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@commitlint/config-conventional'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 自定义校验规则</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@commitlint/config-conventional&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type-enum&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>
+        <span class="token string">&quot;build&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 主要目的是修改项目构建内容</span>
+        <span class="token string">&quot;ci&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 修改集成流程</span>
+        <span class="token string">&quot;docs&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文档修改</span>
+        <span class="token string">&quot;feat&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 新功能</span>
+        <span class="token string">&quot;fix&quot;</span><span class="token punctuation">,</span> <span class="token comment">//  bug修复</span>
+        <span class="token string">&quot;merge&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 分支合并</span>
+        <span class="token string">&quot;perf&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 性能体验优化</span>
+        <span class="token string">&quot;refactor&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 重构</span>
+        <span class="token string">&quot;style&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不影响逻辑代码修改  例如：样式</span>
+        <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 新增测试用例或更新测试功能</span>
+        <span class="token string">&quot;revert&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 回滚某个更早之前的版本</span>
+        <span class="token string">&quot;chore&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不属于以上类型的其他类型</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type-case&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type-empty&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;scope-empty&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;scope-case&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;subject-full-stop&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;subject-case&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;header-max-length&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span> <span class="token number">72</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token operator">**</span><span class="token operator">**</span><span class="token operator">*</span> 重点 <span class="token operator">**</span><span class="token operator">**</span><span class="token operator">*</span>
+
+<span class="token comment">// 生成 CHANGELOG 文件 查看版本  自动生成 tag 版本  进行管理</span>
+npm install <span class="token operator">-</span><span class="token constant">S</span> standard<span class="token operator">-</span>version
+#or
+yarn add  standard<span class="token operator">-</span>version <span class="token operator">-</span><span class="token constant">S</span>
+
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;scirpt&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;publishing&quot;</span><span class="token operator">:</span> <span class="token string">&quot;np&quot;</span><span class="token punctuation">,</span>   <span class="token comment">// 需要单独添加  主要是检测 git push 规则   yarn add np</span>
+        <span class="token string">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky install&quot;</span><span class="token punctuation">,</span>    <span class="token comment">// 上面有配置</span>
+        <span class="token string">&quot;release&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yarn publishing&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;changelog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard-version &amp;&amp; standard-version -i CHANGELOG.md -o CHANGELOG.md&quot;</span><span class="token punctuation">,</span>    
+        <span class="token comment">// CHANGELOG 会生成两次提交记录  可删除一项</span>
+        <span class="token string">&quot;push:publish&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build &amp;&amp; git push --follow-tags origin master &amp;&amp; npm publish&quot;</span>         
+         <span class="token comment">// git push 在主分支上打tag </span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 每次commit文件检测 </span>
+        <span class="token string">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// 重要 每次提交自动生成 CHANEGLOG 不需要可删除</span>
+        <span class="token string">&quot;pre-push&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run release&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commitlint -E HUSKY_GIT_PARAMS&quot;</span>
+         #or
+        <span class="token comment">//  ccommit 信息监测</span>
+        <span class="token string">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commitlint -x @commitlint/config-conventional -e $HUSKY_GIT_PARAMS&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 查看当前配置是否生效</span>
+npm run release
+#or
+yarn release
+
+# <span class="token keyword">package</span><span class="token punctuation">.</span>json中必须添加
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;github.com:533wusaisai/test-commit.git&quot;</span> <span class="token comment">// git 仓库地址</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 如果想在 CHAGELOG 添加表情</span>
+yarn add conventional<span class="token operator">-</span>changelog<span class="token operator">-</span>gitmoji<span class="token operator">-</span>config
+
+<span class="token comment">// 配置.versionrc.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;feat&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;✨ Features | 新功能&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fix&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🐛 Bug Fixes | Bug 修复&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;init&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🎉 Init | 初始化&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;docs&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;✏️ Documentation | 文档&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;style&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;💄 Styles | 风格&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;refactor&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;♻️ Code Refactoring | 代码重构&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;perf&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;⚡ Performance Improvements | 性能优化&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;✅ Tests | 测试&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;revert&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;⏪ Revert | 回退&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;build&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;📦‍ Build System | 打包构建&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;chore&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;🚀 Chore | 构建/工程依赖/工具&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ci&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> <span class="token string">&quot;👷 Continuous Integration | CI 配置&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;hidden&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">11/26/2021, 4:01:29 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wss/development/dmtj/tj.html" class="prev">
+        提交规范
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/wss/assets/js/app.7f0020ef.js" defer></script><script src="/wss/assets/js/2.fa873243.js" defer></script><script src="/wss/assets/js/11.db44402b.js" defer></script>
+  </body>
+</html>

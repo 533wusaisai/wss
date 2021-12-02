@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组 [Array] | 前端技术架构</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/wss/images/vue.webp">
+    <script src="/wss/javascripts.js"></script>
+    <meta name="description" content="Hello 前端小伙伴">
+    
+    <link rel="preload" href="/wss/assets/css/0.styles.d3eb9add.css" as="style"><link rel="preload" href="/wss/assets/js/app.7f0020ef.js" as="script"><link rel="preload" href="/wss/assets/js/2.fa873243.js" as="script"><link rel="preload" href="/wss/assets/js/15.c744ba8f.js" as="script"><link rel="prefetch" href="/wss/assets/js/10.41534f96.js"><link rel="prefetch" href="/wss/assets/js/11.db44402b.js"><link rel="prefetch" href="/wss/assets/js/12.193b2e00.js"><link rel="prefetch" href="/wss/assets/js/13.9a208163.js"><link rel="prefetch" href="/wss/assets/js/14.daff4cd1.js"><link rel="prefetch" href="/wss/assets/js/3.25e1a0a6.js"><link rel="prefetch" href="/wss/assets/js/4.2f744ccc.js"><link rel="prefetch" href="/wss/assets/js/5.f0bf878f.js"><link rel="prefetch" href="/wss/assets/js/6.2cd6864b.js"><link rel="prefetch" href="/wss/assets/js/7.fe687dbe.js"><link rel="prefetch" href="/wss/assets/js/8.840b5db7.js"><link rel="prefetch" href="/wss/assets/js/9.5b4c3823.js">
+    <link rel="stylesheet" href="/wss/assets/css/0.styles.d3eb9add.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wss/" class="home-link router-link-active"><img src="/wss/images/vue.webp" alt="前端技术架构" class="logo"> <span class="site-name can-hide">前端技术架构</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wss/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wss/development/" class="nav-link">
+  开发指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wss/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wss/development/" class="nav-link">
+  开发指南
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="数组-array"><a href="#数组-array" class="header-anchor">#</a> 数组 [Array]</h2> <ol><li>操作数组方法</li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+  <span class="token operator">-</span> <span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">+</span> Array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span>end<span class="token punctuation">)</span>  <span class="token comment">// 截取数值 返回截取值  start &gt; 开始下标  end &gt; 结束下标  </span>
+    <span class="token operator">&gt;</span> 不会改变原数组
+  <span class="token operator">-</span> <span class="token function">splice</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">+</span> Array<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span>elIndex<span class="token punctuation">,</span> <span class="token string">'str1'</span><span class="token punctuation">,</span><span class="token string">'str2'</span> <span class="token punctuation">)</span> <span class="token comment">// index 替换位置 el 是否需要删除元素 0为不删除  str1 str2</span>
+    <span class="token operator">&gt;</span> 改变原数组
+  <span class="token operator">-</span> <span class="token function">concat</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">+</span> 数组连接
+  <span class="token operator">-</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">+</span> 数组拼接
+  <span class="token operator">-</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">shif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">unshif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">substring</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> every
+  <span class="token operator">-</span> some
+  <span class="token operator">-</span> filter
+  <span class="token operator">-</span> map
+  <span class="token operator">-</span> forEach
+  <span class="token operator">-</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">findIndex</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> fill
+  <span class="token operator">-</span> <span class="token function">copyWithin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> from
+  <span class="token operator">-</span> Object<span class="token punctuation">.</span><span class="token function">key</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">-</span> <span class="token function">includes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">11/11/2021, 5:58:32 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/wss/assets/js/app.7f0020ef.js" defer></script><script src="/wss/assets/js/2.fa873243.js" defer></script><script src="/wss/assets/js/15.c744ba8f.js" defer></script>
+  </body>
+</html>
