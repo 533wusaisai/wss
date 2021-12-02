@@ -14,5 +14,9 @@
     "vuepress": "^1.8.2"
   },
   "keywords": [],
-  "author": ""
+  "author": "",
+  "dependencies": {
+    "hydrogen-js-sdk": "2.2.3",
+    "vilike": "^0.2.2"
+  }
 }
