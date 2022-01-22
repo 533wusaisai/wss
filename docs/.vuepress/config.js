@@ -1,7 +1,7 @@
 module.exports = {
     title: '前端技术架构',             // 设置网站标题
     description: 'Hello 前端小伙伴',                  // 网站描述
-    base: '/wss/',                    // 默认根目录 / 需要根据github上创建的项目name
+    base: '/',                    // 默认根目录 / 需要根据github上创建的项目name
     dest: 'dist',                     // 设置输出目录
     head: [
         [
